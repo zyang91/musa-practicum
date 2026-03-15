@@ -1,0 +1,4385 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20346089496809,
+          39.94998815818104
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000004",
+        "intersection_idx": 1,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "2JqEOWskc8XfIlWfG2-3Dw",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20353425708471,
+          39.949934861687225
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000007",
+        "intersection_idx": 1,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE4WW5wbEFF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20697382895062,
+          39.946901986308376
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000020",
+        "intersection_idx": 5,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "9pc4QnldQwZKRQs7WDLHzg",
+        "gsv_date": "2019-08",
+        "num_traffic_lights": 5,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20690458074908,
+          39.9468455257038
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000021",
+        "intersection_idx": 5,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "4KMSTxq8ie07GZ8qSe2MaA",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20704718497825,
+          39.94684868755764
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000023",
+        "intersection_idx": 5,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "r_7EvWmzbhJjl9SDYzNc3A",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19868213143862,
+          39.947769751827884
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000028",
+        "intersection_idx": 7,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyYkxtVkE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19861288924433,
+          39.947713286227625
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000029",
+        "intersection_idx": 7,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "bUEmenHS7xLadN5kv5GnPw",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1986862527077,
+          39.94765999283258
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000030",
+        "intersection_idx": 7,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyY0xtWEE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19289937111826,
+          39.94877543738811
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000032",
+        "intersection_idx": 8,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEwYXJRcWdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19283013270577,
+          39.94871896830406
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000033",
+        "intersection_idx": 8,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "oBplAgnkuH9uXdY-yVL36g",
+        "gsv_date": "2021-10",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19290350179185,
+          39.948665678614624
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000034",
+        "intersection_idx": 8,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "MNsAcT5TlbCRAnogXwrPjg",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19381304894621,
+          39.94783833125874
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000036",
+        "intersection_idx": 9,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyYUgtbEFF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19374381072937,
+          39.94778186272514
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000037",
+        "intersection_idx": 9,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE4ZHZjNHdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19381717808658,
+          39.94772857244833
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000038",
+        "intersection_idx": 9,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyZGFjSXc.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19388641631011,
+          39.94778504093768
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000039",
+        "intersection_idx": 9,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE2ZG41endF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19487212610531,
+          39.947374726384375
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000040",
+        "intersection_idx": 10,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFxYmZ0Snc.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19480288748063,
+          39.94731825848884
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000041",
+        "intersection_idx": 10,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyZlBId0FF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19487625350634,
+          39.94726496753266
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000042",
+        "intersection_idx": 10,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFtYVR2cWdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19494549213768,
+          39.94732143538399
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000043",
+        "intersection_idx": 10,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "OYPgak2mD34Nc0d4q3Lfzg",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18967400143376,
+          39.94895276700255
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000044",
+        "intersection_idx": 11,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFtZlRIQkE.",
+        "gsv_date": "2019-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18960476552175,
+          39.94889629597554
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000045",
+        "intersection_idx": 11,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyYzZqN3dF",
+        "gsv_date": "2019-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18967813732954,
+          39.94884300835209
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000046",
+        "intersection_idx": 11,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "kHuNfCGWWEOsmKBnxHN_jw",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18974737324822,
+          39.94889947933491
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000047",
+        "intersection_idx": 11,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "PY_lyqII8qQUAYZsw0_jsw",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1916901135637,
+          39.95038464934903
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000048",
+        "intersection_idx": 12,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE4ZHltLWdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19162087451623,
+          39.950328179536456
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000049",
+        "intersection_idx": 12,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJQ084dVdZTlE.",
+        "gsv_date": "2022-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19169424628905,
+          39.950274890625394
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000050",
+        "intersection_idx": 12,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFtZl9sbEFF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19176348534319,
+          39.95033136039378
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000051",
+        "intersection_idx": 12,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "aIiy6v3xsVLQbHwldEXUDg",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20158497994369,
+          39.95004081304719
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000052",
+        "intersection_idx": 13,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFpZE9VamdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20158909666017,
+          39.949931053947424
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000054",
+        "intersection_idx": 13,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "GcUBxqLCLsplK-ba8e3xNg",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20165834358899,
+          39.94998751775472
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000055",
+        "intersection_idx": 13,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyYmZ0VHc.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20141184129976,
+          39.94982418327367
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000056",
+        "intersection_idx": 14,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "1EjC1I07Vstc4DMQVZYL4g",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20134259474234,
+          39.94976771931787
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000057",
+        "intersection_idx": 14,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFzY2FZdndF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20141595828287,
+          39.94971442417993
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000058",
+        "intersection_idx": 14,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFtYUhfd0FF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20148520484695,
+          39.94977088809153
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000059",
+        "intersection_idx": 14,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGF5Y0QzWUE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18766490364153,
+          39.947544216685245
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000080",
+        "intersection_idx": 20,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJQ09uSnpKMlFF",
+        "gsv_date": "2022-05",
+        "num_traffic_lights": 7,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1875956708353,
+          39.94748774444808
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000081",
+        "intersection_idx": 20,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "9Qi4U7uz3Wzr-Uq_mYnJbQ",
+        "gsv_date": "2025-10",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1876690426977,
+          39.94743445810784
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000082",
+        "intersection_idx": 20,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "9Qi4U7uz3Wzr-Uq_mYnJbQ",
+        "gsv_date": "2025-10",
+        "num_traffic_lights": 6,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18773827551064,
+          39.94749093030083
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000083",
+        "intersection_idx": 20,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "MX8sHN0La7diF75CBUO-Hw",
+        "gsv_date": "2025-10",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19681722110754,
+          39.94405867151005
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000095",
+        "intersection_idx": 23,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "PcBhTtf5KHvyfdhlcqBm5w",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19643222090416,
+          39.943699978541936
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000096",
+        "intersection_idx": 24,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "SoW_dsyRRDrw5CcVw7Fq2Q",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.196362984728,
+          39.94364351158663
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000097",
+        "intersection_idx": 24,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFpZVczS3c.",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19643634556141,
+          39.94359021962256
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000098",
+        "intersection_idx": 24,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "6KtTz49l1xfNDDqK-CURKg",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19650558174423,
+          39.94364668653367
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000099",
+        "intersection_idx": 24,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "-k-ncdZWD5rSlhrbyST9iQ",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19846548746543,
+          39.94614275683579
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000100",
+        "intersection_idx": 25,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJQ084dVh3dkFF",
+        "gsv_date": "2022-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19839624710957,
+          39.94608629110514
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000101",
+        "intersection_idx": 25,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "JakFT8rai9YxFsKgpgqrlA",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19846960898583,
+          39.94603299784488
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000102",
+        "intersection_idx": 25,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "JakFT8rai9YxFsKgpgqrlA",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19853884934837,
+          39.94608946353132
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000103",
+        "intersection_idx": 25,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "d15gfQiTjT3K0A3isSkLyg",
+        "gsv_date": "2025-08",
+        "num_traffic_lights": 6,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19954605840034,
+          39.94927518132387
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000108",
+        "intersection_idx": 27,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "7Vaacu-5CgM7LD0NsqaK5Q",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19947681395342,
+          39.94921871624401
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000109",
+        "intersection_idx": 27,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "9IxkW40zKjyZYQGRZXBWbA",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19955017836485,
+          39.94916542229946
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000110",
+        "intersection_idx": 27,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFENJSE0wb2dLRUlDQWdJRGFzYzVl",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 7,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19961942281842,
+          39.94922188733512
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000111",
+        "intersection_idx": 27,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyZTNkX2dF",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19128165415032,
+          39.947645122502735
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000116",
+        "intersection_idx": 29,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGF5YmZxdGdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19121241823466,
+          39.94758865244424
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000117",
+        "intersection_idx": 29,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyYmlWemdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19128578736898,
+          39.94753536378803
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000118",
+        "intersection_idx": 29,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGNrSWZUR3c.",
+        "gsv_date": "2020-05",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19135502329131,
+          39.94759183380233
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000119",
+        "intersection_idx": 29,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJQ080b2VmY2c.",
+        "gsv_date": "2022-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1970866364624,
+          39.94638193388215
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000120",
+        "intersection_idx": 30,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE2ZlMtNmdF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19701739700886,
+          39.94632546732079
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000121",
+        "intersection_idx": 30,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGE2YkR5WVE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19709076022512,
+          39.94627217494408
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000122",
+        "intersection_idx": 30,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGE2ZG1YTGc.",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19715999968534,
+          39.94632864146123
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000123",
+        "intersection_idx": 30,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGF5ZHY0dFFF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19940319102635,
+          39.95034669654643
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000129",
+        "intersection_idx": 32,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyYkNyUXc.",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19947655671378,
+          39.95029340265183
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000130",
+        "intersection_idx": 32,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "FBQHlT-IQ5Dcs1fwpmdVQw",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19954580225597,
+          39.95034986773188
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000131",
+        "intersection_idx": 32,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE4Zm1QaEFF",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2012701871795,
+          39.95006087282699
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000132",
+        "intersection_idx": 33,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "ogJt4kpGTxi0yPrmLqXSpA",
+        "gsv_date": "2024-04",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20120094049854,
+          39.95000440878584
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000133",
+        "intersection_idx": 33,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGE4YXItTWc.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20105310810118,
+          39.94993833217467
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000136",
+        "intersection_idx": 34,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "ISbNbJsz1d_NE93A9_XCOg",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20098386172559,
+          39.94988186800272
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000137",
+        "intersection_idx": 34,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "8QDdzAHID_B_S4Xkno3pGw",
+        "gsv_date": "2025-07",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19288457863412,
+          39.94670665384698
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000144",
+        "intersection_idx": 36,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyWlhtV3c.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19281534234251,
+          39.94665018475417
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000145",
+        "intersection_idx": 36,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFtZFQ5bEFF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19288870920586,
+          39.94659689506914
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000146",
+        "intersection_idx": 36,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGF5ZjM2bndF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19295794550416,
+          39.946653364117765
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000147",
+        "intersection_idx": 36,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyYU9uQWc.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1951826249742,
+          39.945771195537205
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000148",
+        "intersection_idx": 37,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyY1B2NkFF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19518675177613,
+          39.94566143666994
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000150",
+        "intersection_idx": 37,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyYS1RRlE.",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19525598903122,
+          39.94571790433406
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000151",
+        "intersection_idx": 37,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE4YS15MndF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19601398080087,
+          39.94686282763392
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000152",
+        "intersection_idx": 38,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyYTdnRVE.",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19594474174879,
+          39.94680636042629
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000153",
+        "intersection_idx": 38,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE2WnpmaHdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19601810632588,
+          39.94675306873766
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000154",
+        "intersection_idx": 38,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEwYUdOSkE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19608734538461,
+          39.94680953590107
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000155",
+        "intersection_idx": 38,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "KFLjoDIQNQzSdxHzs9P7LA",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1992054051945,
+          39.95132129860082
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000164",
+        "intersection_idx": 41,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "fsyJzfbHjx_207dooVhlQw",
+        "gsv_date": "2018-10",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19913615894497,
+          39.951264833315705
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000165",
+        "intersection_idx": 41,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "M4oyvoxeLzkNn3YbB_mlJQ",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19920952583352,
+          39.95121153959434
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000166",
+        "intersection_idx": 41,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEwY0hGTnc.",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19927877208971,
+          39.95126800483529
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000167",
+        "intersection_idx": 41,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "lCUnL8effFxei9I-pA_7Tw",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20080228318776,
+          39.95152242411883
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000172",
+        "intersection_idx": 43,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "tO-mMRn3nz7kzujmFF85uQ",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 5,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20073303540579,
+          39.95146595979574
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000173",
+        "intersection_idx": 43,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEwYXY0WUE.",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2008064012587,
+          39.951412665052366
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000174",
+        "intersection_idx": 43,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "2atiZAQQ7bvQqiO90hMbrg",
+        "gsv_date": "2016-11",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2008756490473,
+          39.95146912933123
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000175",
+        "intersection_idx": 43,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyWV90NndF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19697014730805,
+          39.95957315988729
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000177",
+        "intersection_idx": 44,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "O_VR64_qR9grIu4L1QDgeA",
+        "gsv_date": "2023-04",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1970435248708,
+          39.95951986757431
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000178",
+        "intersection_idx": 44,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "wJ03_yFCw2Vw9RsKNzlXOQ",
+        "gsv_date": "2023-04",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1971127777969,
+          39.95957633411962
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000179",
+        "intersection_idx": 44,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "iLyuTuDJG9e29aqWS_KOvw",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19962287394301,
+          39.956924698706096
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000196",
+        "intersection_idx": 49,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "hUOsLNexFU4d_3inzYdHhQ",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19955362163381,
+          39.95686823367272
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000197",
+        "intersection_idx": 49,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "94PpkJuHct4TtinlauE41A",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19962699424734,
+          39.95681493969832
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000198",
+        "intersection_idx": 49,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFtYTZxZ3dF",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19969624656322,
+          39.956871404687504
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000199",
+        "intersection_idx": 49,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "bkhOGdWKA7u16DMCNRLnLg",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19800814892967,
+          39.956718632283234
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000212",
+        "intersection_idx": 53,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "Y0e6x77zkwZiGUtgB-TVxQ",
+        "gsv_date": "2024-07",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19793889817292,
+          39.95666216627702
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000213",
+        "intersection_idx": 53,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "gZgZZqK6KSANVvQba7n8UA",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19801227183079,
+          39.95660887333609
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000214",
+        "intersection_idx": 53,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGF5YnFMOEFF",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19808152259422,
+          39.956665339298105
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000215",
+        "intersection_idx": 53,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "oW6KLhkzAAXyAiS_oFFbzQ",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19612104703977,
+          39.956493162888286
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000220",
+        "intersection_idx": 55,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "zA6jUBOoHWqRva2AFKcHQw",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19605179808167,
+          39.95643669574518
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000221",
+        "intersection_idx": 55,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "pG52H8ufrYj3apvTntPniQ",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19612517297664,
+          39.956383404012094
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000222",
+        "intersection_idx": 55,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFrWWZaWkE.",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19415346217214,
+          39.95624394585071
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000228",
+        "intersection_idx": 57,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "e7AqnAwyYI5OsJZv3JbB5A",
+        "gsv_date": "2024-07",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1940842151039,
+          39.95618747752225
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000229",
+        "intersection_idx": 57,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "uW39rsLUmzraIlPCtkKD5A",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19415759127335,
+          39.95613418704853
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000230",
+        "intersection_idx": 57,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "SybR7NYUtAqjk12vwh1ohA",
+        "gsv_date": "2017-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19422683834827,
+          39.956190655332776
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000231",
+        "intersection_idx": 57,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "XCPxOX4AO95uWXLP2kQN-w",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19146487116643,
+          39.955907037358
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000236",
+        "intersection_idx": 59,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "qkoCDpsebQwOPtWhv0hgTQ",
+        "gsv_date": "2024-07",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19139562667684,
+          39.9558505674099
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000237",
+        "intersection_idx": 59,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "L_IaMMrt1i7L8muvBpJ4fg",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19146900459171,
+          39.95579727865702
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000238",
+        "intersection_idx": 59,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGF5YnZROGdF",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19153824908797,
+          39.95585374856095
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000239",
+        "intersection_idx": 59,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "sFHvhJJsFvo1jKdpQsL21A",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20227382565888,
+          39.95569431910465
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000248",
+        "intersection_idx": 62,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "8FNMPR_JzXuqSiod9DHE2w",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20234719486996,
+          39.95564102338537
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000251",
+        "intersection_idx": 62,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "_kbOov3iVtTPzczaKnb49Q",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19994097258747,
+          39.95540570047322
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000256",
+        "intersection_idx": 64,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGF5ZVB2Vnc.",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19987172156253,
+          39.95534923563135
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000257",
+        "intersection_idx": 64,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyY3VDTlE.",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19994509228563,
+          39.95529594144935
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000258",
+        "intersection_idx": 64,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "jKpIlrcqzA9LzkChSUARkQ",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20001434331722,
+          39.95535240624702
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000259",
+        "intersection_idx": 64,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFtZG5IR3c.",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19824225643536,
+          39.95515048004848
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000265",
+        "intersection_idx": 66,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "EPeAtK1XfdPs1Ye-wpJ4yg",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19831562822226,
+          39.955097186909406
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000266",
+        "intersection_idx": 66,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "EPeAtK1XfdPs1Ye-wpJ4yg",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19838487769665,
+          39.95515365268877
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000267",
+        "intersection_idx": 66,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "PhaXNzhu22Nps5_DPxnDlQ",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1964457576077,
+          39.95497120324384
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000268",
+        "intersection_idx": 67,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "thX_UdyKqWE-STkbcLGzyA",
+        "gsv_date": "2016-10",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19637650993134,
+          39.95491473629627
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000269",
+        "intersection_idx": 67,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFxY3YwdlFF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19644988292745,
+          39.95486144435133
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000270",
+        "intersection_idx": 67,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyZHYzRWc.",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1965191306105,
+          39.95491791125472
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000271",
+        "intersection_idx": 67,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEwWW1kdlFF",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19446785523564,
+          39.95472791305225
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000276",
+        "intersection_idx": 69,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGE2ZlQxQlE.",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19439860945157,
+          39.954671444913096
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000277",
+        "intersection_idx": 69,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE4Y3ZBOVFF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19447198373668,
+          39.95461815423414
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000278",
+        "intersection_idx": 69,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "bRZqJlZBS1on4WLoaXEAxQ",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1945412295274,
+          39.95467462232907
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000279",
+        "intersection_idx": 69,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "N_pWztsUT87KNqvXkj85NA",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19177929850045,
+          39.95439364322066
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000284",
+        "intersection_idx": 71,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "Q7Gytgt-reiOmB9SfUxleg",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19178343132558,
+          39.9542838845038
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000286",
+        "intersection_idx": 71,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "vQsmyMqZaKY6V9Cyub-V1w",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19185267454043,
+          39.95434035421837
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000287",
+        "intersection_idx": 71,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "jp7LV_0dp0q0Pd_AdUjoQw",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20259019676621,
+          39.95417665780343
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000296",
+        "intersection_idx": 74,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "kaAreVU_pxtDUnVS6gKoQQ",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20252094479213,
+          39.95412019455758
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000297",
+        "intersection_idx": 74,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "A7jXmN9DAN7Q_VRXYmyECw",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20266356408978,
+          39.9541233618777
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000299",
+        "intersection_idx": 74,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJQ3VrSjZ2ZEE.",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20026070868933,
+          39.95388468011829
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000304",
+        "intersection_idx": 76,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "JoyBSdIIvFFy_YnzjpgsuQ",
+        "gsv_date": "2024-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20019145894932,
+          39.95382821546899
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000305",
+        "intersection_idx": 76,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFtY2ZoVnc.",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2002648277786,
+          39.95377492107834
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000306",
+        "intersection_idx": 76,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "0n2qRfRK8G5hMTUu6tICaw",
+        "gsv_date": "2009-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20033407752527,
+          39.95383138568346
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000307",
+        "intersection_idx": 76,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFxYXFxbXdF",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19864894717497,
+          39.95368852959261
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000308",
+        "intersection_idx": 77,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "vnH0fx9xA1j3m1JznvHJCQ",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19857969897475,
+          39.95363206397226
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000309",
+        "intersection_idx": 77,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFtZUdsb1FF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19865306885674,
+          39.95357877061323
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000310",
+        "intersection_idx": 77,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFxY09YYWc.",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19676314623256,
+          39.95345169380858
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000312",
+        "intersection_idx": 78,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyZjN4d2dF",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19669389984142,
+          39.95339522705212
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000313",
+        "intersection_idx": 78,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE4YzdWMHdF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19676727094716,
+          39.953341934900095
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000314",
+        "intersection_idx": 78,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE2ZVBLdlFF",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19683651734495,
+          39.95339840161233
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000315",
+        "intersection_idx": 78,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFxWktUdlFF",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.20308422986007,
+          39.95180979250736
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000328",
+        "intersection_idx": 82,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "EEnPV698CJjkFDtPXt7xAw",
+        "gsv_date": "2024-04",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2031575942396,
+          39.951756496259286
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000331",
+        "intersection_idx": 82,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "WMDky9SGSGxVLz3vHtNIaQ",
+        "gsv_date": "2024-06",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19117095522942,
+          39.95736029094033
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000340",
+        "intersection_idx": 85,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyYkxfdkFF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19124433495155,
+          39.95730700233527
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000343",
+        "intersection_idx": 85,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "IiHtO502pGT-YGHo0mjYww",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18965051358713,
+          39.954081539721535
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000373",
+        "intersection_idx": 93,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE2ZDN3MWdF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18972389096002,
+          39.95402825208176
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000374",
+        "intersection_idx": 93,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFtZmZBSVE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18979313220208,
+          39.95408472303702
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000375",
+        "intersection_idx": 93,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "_z_MRFh1y2EdRjMVx-WD5Q",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18738750683296,
+          39.95385107255468
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000376",
+        "intersection_idx": 94,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFxWjI0bUFF",
+        "gsv_date": "2019-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18746088573222,
+          39.9537977863636
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000379",
+        "intersection_idx": 94,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyY0ROdHdF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19258690207877,
+          39.95051032163676
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000380",
+        "intersection_idx": 95,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "sDMh3Z_qXJCwLWMdlC6D7g",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19266027329047,
+          39.95045703210753
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000383",
+        "intersection_idx": 95,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "i7v_aaV5fQi6NHABN2Z6bA",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1837412808629,
+          39.953399413275065
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000392",
+        "intersection_idx": 98,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "vSyQitN7S8MYfqhA_crZ3w",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18367204535086,
+          39.95334293867433
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000393",
+        "intersection_idx": 98,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJQ09zdmpRbXdF",
+        "gsv_date": "2022-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18374542661583,
+          39.953289654861535
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000394",
+        "intersection_idx": 98,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE2Y2ZrdXdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18381466213458,
+          39.95334612941805
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000395",
+        "intersection_idx": 98,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJQ09zcmpCcmdF",
+        "gsv_date": "2022-05",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18519852694185,
+          39.95352072900717
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000397",
+        "intersection_idx": 99,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJQ09zcmlFalFF",
+        "gsv_date": "2022-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18527190720144,
+          39.95346744421717
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000398",
+        "intersection_idx": 99,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "mBknJ56GG9YC04htxc-0Hw",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18534114417052,
+          39.95352391785422
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000399",
+        "intersection_idx": 99,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJQ09zcmptVlE.",
+        "gsv_date": "2022-05",
+        "num_traffic_lights": 5,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18120431055439,
+          39.95454619446693
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000402",
+        "intersection_idx": 100,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEyWXF5S1E.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18333475867475,
+          39.954882957931886
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000404",
+        "intersection_idx": 101,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "YiJz_eR7XxpdJAcwo1VpXw",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18326552198852,
+          39.95482648308639
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000405",
+        "intersection_idx": 101,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGF5ZHpIZ0FF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1833389051751,
+          39.954773199537705
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000406",
+        "intersection_idx": 101,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGF5ZGFyQ3c.",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18340814186806,
+          39.95482967433902
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000407",
+        "intersection_idx": 101,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFtZWJzREE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 5,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19209769030124,
+          39.95287846728794
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000416",
+        "intersection_idx": 104,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "mvMh-_YCklZvuooWr3ApUg",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19202844837292,
+          39.95282199772088
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000417",
+        "intersection_idx": 104,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE4WnV2dlFF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18406170261812,
+          39.95186774054725
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000424",
+        "intersection_idx": 106,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE2YUdsNkFF",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18399246840086,
+          39.95181126613949
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000425",
+        "intersection_idx": 106,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFtZTZsYkE.",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1841350819838,
+          39.951814456481145
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000427",
+        "intersection_idx": 106,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "IF7NoOOyp5UGnF367arsBw",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1819342498742,
+          39.95317875849693
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000428",
+        "intersection_idx": 107,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJQ09zcmlCX2dF",
+        "gsv_date": "2022-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.182007632325,
+          39.95312547579669
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000431",
+        "intersection_idx": 107,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJQ09zcmpGWmc.",
+        "gsv_date": "2022-05",
+        "num_traffic_lights": 6,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19724397547496,
+          39.95108508422979
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000432",
+        "intersection_idx": 108,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "pGPzWpYiSafXEu3ZwfwNqA",
+        "gsv_date": "2009-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19717473109668,
+          39.95102861776298
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000433",
+        "intersection_idx": 108,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "4LdqAqgeRhZ9NhqdxS8D6w",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19731734365389,
+          39.951031791719664
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000435",
+        "intersection_idx": 108,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFpZFRfR0E.",
+        "gsv_date": "2020-01",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18706445846679,
+          39.95535980240536
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000436",
+        "intersection_idx": 109,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "OG5vzLjPsQsHVJDrtC6xmg",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18699521819353,
+          39.95530332980647
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000437",
+        "intersection_idx": 109,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "vCSNFzFJc0gQQfjEmwxneA",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18713783924939,
+          39.95530651642503
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000439",
+        "intersection_idx": 109,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE4Y3FPdVFF",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19478704289963,
+          39.9532062028817
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000440",
+        "intersection_idx": 110,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "kb3WnGiPIcHkimBJ5T-p5A",
+        "gsv_date": "2024-07",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1947177984015,
+          39.953149734934776
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000441",
+        "intersection_idx": 110,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyWUdROEFF",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19479117079241,
+          39.95309644404755
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000442",
+        "intersection_idx": 110,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "tfWvyRANXFatHhDYMFKFHw",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19486041529723,
+          39.95315291195028
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000443",
+        "intersection_idx": 110,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "gZQqXCOrLmBvKlamY5xvOA",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18942001100696,
+          39.95560068024101
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000449",
+        "intersection_idx": 112,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "UzmncC59ymtmsCEVyF3dhQ",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18956263280084,
+          39.95560386384679
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000451",
+        "intersection_idx": 112,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "gwx8T_tuzPx4NAb3Qmv-OA",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18528923641001,
+          39.955087444734126
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000453",
+        "intersection_idx": 113,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "i5F-xdX_XFUHT-r7mjNHwA",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.185362618291,
+          39.95503415989002
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000454",
+        "intersection_idx": 113,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGE2ZDZ1WkE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18543185693251,
+          39.95509063347235
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000455",
+        "intersection_idx": 113,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGE2YmVyR1E.",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18826668315548,
+          39.95550592753667
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000456",
+        "intersection_idx": 114,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "NV-bbFRrE-RwVQD_he0tjw",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18819744173373,
+          39.95544945566197
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000457",
+        "intersection_idx": 114,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "iIY9JlCbkA-wj3CTvNKbxA",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18827082172434,
+          39.95539616895628
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000458",
+        "intersection_idx": 114,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGEwY2JNZFE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18834006315278,
+          39.95545264078678
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000459",
+        "intersection_idx": 114,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGF5Zks3VXc.",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18996577329379,
+          39.95256210096399
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000461",
+        "intersection_idx": 115,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "TmzTgEptpB8iEE59lgsT4A",
+        "gsv_date": "2024-10",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19003914877804,
+          39.95250881311848
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000462",
+        "intersection_idx": 115,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGE2ZUNvSmc.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18279235184526,
+          39.95171240530519
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000468",
+        "intersection_idx": 117,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "IjDXULw2zZ1j_lFQb_MifA",
+        "gsv_date": "2018-10",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18272311884165,
+          39.95165593013285
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000469",
+        "intersection_idx": 117,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGFxWlhzbkFF",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18167869308563,
+          39.95314576456708
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000484",
+        "intersection_idx": 121,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "vbUTJV7pZ4xU6wzhNL6B4Q",
+        "gsv_date": "2018-11",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18160945954699,
+          39.95308928872397
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000485",
+        "intersection_idx": 121,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJQ09zcmplVGc.",
+        "gsv_date": "2022-05",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18168284215592,
+          39.95303600623153
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000486",
+        "intersection_idx": 121,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "4h7TyBLNB30HtCit7muKCA",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18107740322284,
+          39.95693808075945
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000496",
+        "intersection_idx": 124,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "fAHp2zRSv-CROOXUfdwS6g",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18100816631862,
+          39.95688160455438
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000497",
+        "intersection_idx": 124,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "8Fy_7aYPmh2UmiVKE7X1PA",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18108155349638,
+          39.95682832245677
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000498",
+        "intersection_idx": 124,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "jBKIRXeWWr-tSbpcca7b4g",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18115079040732,
+          39.956884798617615
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000499",
+        "intersection_idx": 124,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "jBKIRXeWWr-tSbpcca7b4g",
+        "gsv_date": "2025-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19532340604174,
+          39.95084591491575
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000536",
+        "intersection_idx": 134,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE2ZHJhcHdF",
+        "gsv_date": "2019-05",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19525416350378,
+          39.95078944729193
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000537",
+        "intersection_idx": 134,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "upDmXLz57dfuzXCGJ4NIVA",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19532753292447,
+          39.95073615605533
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000538",
+        "intersection_idx": 134,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "13lSFiy47g6zjDqiAYtRbg",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 5,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1953967754691,
+          39.95079262363493
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000539",
+        "intersection_idx": 134,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "R0o6foKcAWRJt3LGZnzxCw",
+        "gsv_date": "2009-06",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18748274206983,
+          39.95529992098341
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000562",
+        "intersection_idx": 140,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGFpWlM2UUE.",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18755198274494,
+          39.95535639328864
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000563",
+        "intersection_idx": 140,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "CAoSFkNJSE0wb2dLRUlDQWdJRGE2YmpNU2c.",
+        "gsv_date": "2019-06",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18820088129232,
+          39.95583992547908
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000564",
+        "intersection_idx": 141,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGE2Y2Y3eFFF",
+        "gsv_date": "2019-09",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1881316395848,
+          39.95578345356478
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000565",
+        "intersection_idx": 141,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "JyZSLMAvJpTL9U961zFOwA",
+        "gsv_date": "2024-08",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18820501998786,
+          39.95573016690208
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000566",
+        "intersection_idx": 141,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "jD00S9864eirR3nxrBqMbA",
+        "gsv_date": "2024-07",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18105842656432,
+          39.95459060738596
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000605",
+        "intersection_idx": 151,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGEyZmJHeEFF",
+        "gsv_date": "2019-05",
+        "num_traffic_lights": 3,
+        "num_stop_signs": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18113181122743,
+          39.95453732525026
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000606",
+        "intersection_idx": 151,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "CAoSF0NJSE0wb2dLRUlDQWdJRGF5Wld2NGdF",
+        "gsv_date": "2020-06",
+        "num_traffic_lights": 1,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19760796803088,
+          39.957944704319466
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000612",
+        "intersection_idx": 153,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "aFnzPgzi2dWbg3bXC4yIGQ",
+        "gsv_date": "2024-07",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19753871635673,
+          39.95788823807227
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000613",
+        "intersection_idx": 153,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "aFnzPgzi2dWbg3bXC4yIGQ",
+        "gsv_date": "2024-07",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1976120916531,
+          39.95783494539079
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000614",
+        "intersection_idx": 153,
+        "arm_direction": 180,
+        "heading": 15,
+        "gsv_pano_id": "uZkE8sT4d3YrygJnTAFI2w",
+        "gsv_date": "2024-07",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19768134333391,
+          39.95789141159377
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000615",
+        "intersection_idx": 153,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "BRIcUqgje6n8U7TjzfxIWw",
+        "gsv_date": "2024-07",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.195642018435,
+          39.9564324921789
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000624",
+        "intersection_idx": 156,
+        "arm_direction": 0,
+        "heading": 195,
+        "gsv_pano_id": "wusdnGhGVuq60tvf_HYhLQ",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.195572769937,
+          39.95637602474721
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000625",
+        "intersection_idx": 156,
+        "arm_direction": 90,
+        "heading": 285,
+        "gsv_pano_id": "Ns_NuGq-ongVhjwl8lCmig",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 4,
+        "num_stop_signs": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19571539364689,
+          39.95637920070823
+        ]
+      },
+      "properties": {
+        "point_id": "pt_000627",
+        "intersection_idx": 156,
+        "arm_direction": 270,
+        "heading": 105,
+        "gsv_pano_id": "BPZL2gkW_BSFlImCY12G4w",
+        "gsv_date": "2025-04",
+        "num_traffic_lights": 2,
+        "num_stop_signs": 0
+      }
+    }
+  ]
+}

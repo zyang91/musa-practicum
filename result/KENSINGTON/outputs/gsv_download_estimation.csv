@@ -1,0 +1,11 @@
+Metric,Value
+Total Intersections,111
+Images per Intersection (directions),4
+Total Images to Download,444
+Image Size (pixels),640x640
+Image FOV (degrees),90
+Estimated Min Storage (GB),0.06
+Estimated Max Storage (GB),0.13
+Estimated Download Time (hours),0.02
+Estimated Download Time (minutes),1
+Time per Request (seconds),0.2
