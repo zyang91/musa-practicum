@@ -208,5 +208,9 @@ __marimo__/
 
 data/raw_tiles/**/*.tif
 data/processed/**/*.tif
-
+data/seg/images/**/*.png
+data/seg/masks/**/*.png
 .DS_Store
+
+data/seg_split/**
+data/seg/*.tif
