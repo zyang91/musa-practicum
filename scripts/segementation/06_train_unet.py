@@ -1,219 +1,172 @@
 import os
 from pathlib import Path
-import cv2
-import numpy as np
-from tqdm import tqdm
-import albumentations as A
 
+import numpy as np
+import pandas as pd
+import rasterio
+from torch.utils.data import Dataset, DataLoader
 import torch
 import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader
+import torch.optim as optim
 
-# -----------------------------
-# Dataset
-# -----------------------------
-class RoadSegDataset(Dataset):
-    def __init__(self, img_dir, mask_dir, transform=None):
+import segmentation_models_pytorch as smp
+from tqdm import tqdm
+
+# ===== config =====
+TRAIN_IMG_DIR = Path("data/split/train/images")
+TRAIN_MASK_DIR = Path("data/split/train/masks")
+VAL_IMG_DIR = Path("data/split/val/images")
+VAL_MASK_DIR = Path("data/split/val/masks")
+
+MODEL_DIR = Path("models")
+MODEL_DIR.mkdir(parents=True, exist_ok=True)
+
+BATCH_SIZE = 8
+NUM_EPOCHS = 25
+LR = 1e-4
+IMG_CHANNELS = 3
+ENCODER = "resnet34"
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
+# ===== dataset =====
+class RasterSegDataset(Dataset):
+    def __init__(self, img_dir, mask_dir):
         self.img_dir = Path(img_dir)
         self.mask_dir = Path(mask_dir)
-        self.transform = transform
-        self.files = sorted([p.name for p in self.img_dir.glob("*.png")])
+        self.files = sorted([p.name for p in self.img_dir.glob("*")])
 
     def __len__(self):
         return len(self.files)
 
     def __getitem__(self, idx):
         fname = self.files[idx]
+        img_path = self.img_dir / fname
+        mask_path = self.mask_dir / fname
 
-        img = cv2.imread(str(self.img_dir / fname), cv2.IMREAD_COLOR)
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        with rasterio.open(img_path) as src:
+            img = src.read().astype(np.float32)   # (C,H,W)
 
-        mask = cv2.imread(str(self.mask_dir / fname), cv2.IMREAD_GRAYSCALE)
+        with rasterio.open(mask_path) as src:
+            mask = src.read(1).astype(np.float32) # (H,W)
+
+        # normalize image to [0,1]
+        if img.max() > 0:
+            img = img / img.max()
+
         mask = (mask > 0).astype(np.float32)
 
-        if self.transform:
-            out = self.transform(image=img, mask=mask)
-            img = out["image"]
-            mask = out["mask"]
+        img = torch.tensor(img, dtype=torch.float32)
+        mask = torch.tensor(mask, dtype=torch.float32).unsqueeze(0)
 
-        img = img.astype(np.float32) / 255.0
-        img = np.transpose(img, (2, 0, 1))
-        mask = np.expand_dims(mask.astype(np.float32), axis=0)
+        return img, mask
 
-        return torch.tensor(img, dtype=torch.float32), torch.tensor(mask, dtype=torch.float32)
+# ===== metrics =====
+def dice_coef(preds, targets, threshold=0.5, eps=1e-7):
+    preds = (preds > threshold).float()
+    targets = targets.float()
 
-# -----------------------------
-# Transforms
-# -----------------------------
-train_tfms = A.Compose([
-    A.HorizontalFlip(p=0.5),
-    A.VerticalFlip(p=0.2),
-    A.RandomRotate90(p=0.3),
-    A.ColorJitter(brightness=0.15, contrast=0.15, saturation=0.1, hue=0.03, p=0.5),
-])
+    intersection = (preds * targets).sum(dim=(1,2,3))
+    union = preds.sum(dim=(1,2,3)) + targets.sum(dim=(1,2,3))
 
-val_tfms = A.Compose([])
+    dice = (2 * intersection + eps) / (union + eps)
+    return dice.mean().item()
 
-# -----------------------------
-# Model
-# -----------------------------
-class DoubleConv(nn.Module):
-    def __init__(self, in_ch, out_ch):
-        super().__init__()
-        self.net = nn.Sequential(
-            nn.Conv2d(in_ch, out_ch, 3, padding=1),
-            nn.BatchNorm2d(out_ch),
-            nn.ReLU(inplace=True),
-            nn.Conv2d(out_ch, out_ch, 3, padding=1),
-            nn.BatchNorm2d(out_ch),
-            nn.ReLU(inplace=True),
-        )
+# ===== training loops =====
+def train_one_epoch(model, loader, criterion, optimizer, device):
+    model.train()
+    running_loss = 0.0
 
-    def forward(self, x):
-        return self.net(x)
+    for imgs, masks in tqdm(loader, desc="Train", leave=False):
+        imgs = imgs.to(device)
+        masks = masks.to(device)
 
-class UNet(nn.Module):
-    def __init__(self, in_ch=3, out_ch=1, base=32):
-        super().__init__()
-        self.enc1 = DoubleConv(in_ch, base)
-        self.pool1 = nn.MaxPool2d(2)
-        self.enc2 = DoubleConv(base, base*2)
-        self.pool2 = nn.MaxPool2d(2)
-        self.enc3 = DoubleConv(base*2, base*4)
-        self.pool3 = nn.MaxPool2d(2)
-        self.enc4 = DoubleConv(base*4, base*8)
-        self.pool4 = nn.MaxPool2d(2)
+        optimizer.zero_grad()
+        outputs = model(imgs)
+        loss = criterion(outputs, masks)
+        loss.backward()
+        optimizer.step()
 
-        self.bottleneck = DoubleConv(base*8, base*16)
+        running_loss += loss.item() * imgs.size(0)
 
-        self.up4 = nn.ConvTranspose2d(base*16, base*8, 2, stride=2)
-        self.dec4 = DoubleConv(base*16, base*8)
-        self.up3 = nn.ConvTranspose2d(base*8, base*4, 2, stride=2)
-        self.dec3 = DoubleConv(base*8, base*4)
-        self.up2 = nn.ConvTranspose2d(base*4, base*2, 2, stride=2)
-        self.dec2 = DoubleConv(base*4, base*2)
-        self.up1 = nn.ConvTranspose2d(base*2, base, 2, stride=2)
-        self.dec1 = DoubleConv(base*2, base)
-
-        self.out = nn.Conv2d(base, out_ch, 1)
-
-    def forward(self, x):
-        e1 = self.enc1(x)
-        e2 = self.enc2(self.pool1(e1))
-        e3 = self.enc3(self.pool2(e2))
-        e4 = self.enc4(self.pool3(e3))
-        b = self.bottleneck(self.pool4(e4))
-
-        d4 = self.up4(b)
-        d4 = self.dec4(torch.cat([d4, e4], dim=1))
-        d3 = self.up3(d4)
-        d3 = self.dec3(torch.cat([d3, e3], dim=1))
-        d2 = self.up2(d3)
-        d2 = self.dec2(torch.cat([d2, e2], dim=1))
-        d1 = self.up1(d2)
-        d1 = self.dec1(torch.cat([d1, e1], dim=1))
-
-        return self.out(d1)
-
-# -----------------------------
-# Loss + metric
-# -----------------------------
-class DiceBCELoss(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.bce = nn.BCEWithLogitsLoss()
-
-    def forward(self, logits, targets, eps=1e-6):
-        bce = self.bce(logits, targets)
-        probs = torch.sigmoid(logits)
-        inter = (probs * targets).sum(dim=(2, 3))
-        union = probs.sum(dim=(2, 3)) + targets.sum(dim=(2, 3))
-        dice = 1 - ((2 * inter + eps) / (union + eps))
-        return 0.5 * bce + 0.5 * dice.mean()
+    return running_loss / len(loader.dataset)
 
 @torch.no_grad()
-def dice_score(logits, targets, thr=0.5, eps=1e-6):
-    probs = torch.sigmoid(logits)
-    preds = (probs > thr).float()
-    inter = (preds * targets).sum(dim=(2, 3))
-    union = preds.sum(dim=(2, 3)) + targets.sum(dim=(2, 3))
-    dice = ((2 * inter + eps) / (union + eps)).mean()
-    return dice.item()
+def eval_one_epoch(model, loader, criterion, device):
+    model.eval()
+    running_loss = 0.0
+    all_probs = []
+    all_masks = []
 
-# -----------------------------
-# Train
-# -----------------------------
+    for imgs, masks in tqdm(loader, desc="Val", leave=False):
+        imgs = imgs.to(device)
+        masks = masks.to(device)
+
+        outputs = model(imgs)
+        loss = criterion(outputs, masks)
+
+        probs = torch.sigmoid(outputs)
+
+        running_loss += loss.item() * imgs.size(0)
+        all_probs.append(probs.cpu())
+        all_masks.append(masks.cpu())
+
+    val_loss = running_loss / len(loader.dataset)
+    all_probs = torch.cat(all_probs, dim=0)
+    all_masks = torch.cat(all_masks, dim=0)
+    val_dice = dice_coef(all_probs, all_masks, threshold=0.5)
+
+    return val_loss, val_dice
+
 def main():
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    print("Using device:", device)
+    print("Device:", DEVICE)
 
-    train_ds = RoadSegDataset(
-        "data/seg_split/images_train",
-        "data/seg_split/masks_train",
-        transform=train_tfms
-    )
-    val_ds = RoadSegDataset(
-        "data/seg_split/images_val",
-        "data/seg_split/masks_val",
-        transform=val_tfms
-    )
+    train_ds = RasterSegDataset(TRAIN_IMG_DIR, TRAIN_MASK_DIR)
+    val_ds = RasterSegDataset(VAL_IMG_DIR, VAL_MASK_DIR)
 
-    train_loader = DataLoader(train_ds, batch_size=8, shuffle=True, num_workers=0)
-    val_loader = DataLoader(val_ds, batch_size=8, shuffle=False, num_workers=0)
+    print(f"Train samples: {len(train_ds)}")
+    print(f"Val samples: {len(val_ds)}")
 
-    model = UNet().to(device)
-    criterion = DiceBCELoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
+    train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=2)
+    val_loader = DataLoader(val_ds, batch_size=BATCH_SIZE, shuffle=False, num_workers=2)
 
-    out_dir = Path("data/seg_model")
-    out_dir.mkdir(parents=True, exist_ok=True)
-    best_path = out_dir / "unet_best.pt"
+    model = smp.Unet(
+        encoder_name=ENCODER,
+        encoder_weights="imagenet",
+        in_channels=IMG_CHANNELS,
+        classes=1
+    ).to(DEVICE)
 
-    best_dice = -1
+    criterion = nn.BCEWithLogitsLoss()
+    optimizer = optim.Adam(model.parameters(), lr=LR)
 
-    for epoch in range(1, 16):
-        model.train()
-        train_loss = 0.0
+    best_val_dice = -1
+    history = []
 
-        for imgs, masks in tqdm(train_loader, desc=f"Train epoch {epoch}"):
-            imgs = imgs.to(device)
-            masks = masks.to(device)
+    for epoch in range(NUM_EPOCHS):
+        print(f"\nEpoch {epoch+1}/{NUM_EPOCHS}")
 
-            optimizer.zero_grad()
-            logits = model(imgs)
-            loss = criterion(logits, masks)
-            loss.backward()
-            optimizer.step()
+        train_loss = train_one_epoch(model, train_loader, criterion, optimizer, DEVICE)
+        val_loss, val_dice = eval_one_epoch(model, val_loader, criterion, DEVICE)
 
-            train_loss += loss.item()
+        print(f"Train Loss: {train_loss:.4f}")
+        print(f"Val Loss:   {val_loss:.4f}")
+        print(f"Val Dice:   {val_dice:.4f}")
 
-        train_loss /= max(len(train_loader), 1)
+        history.append({
+            "epoch": epoch + 1,
+            "train_loss": train_loss,
+            "val_loss": val_loss,
+            "val_dice": val_dice
+        })
 
-        model.eval()
-        val_loss = 0.0
-        val_dice = 0.0
+        if val_dice > best_val_dice:
+            best_val_dice = val_dice
+            torch.save(model.state_dict(), MODEL_DIR / "best_unet.pt")
+            print("Saved best model.")
 
-        with torch.no_grad():
-            for imgs, masks in tqdm(val_loader, desc=f"Val epoch {epoch}"):
-                imgs = imgs.to(device)
-                masks = masks.to(device)
-
-                logits = model(imgs)
-                loss = criterion(logits, masks)
-
-                val_loss += loss.item()
-                val_dice += dice_score(logits, masks)
-
-        val_loss /= max(len(val_loader), 1)
-        val_dice /= max(len(val_loader), 1)
-
-        print(f"\nEpoch {epoch:02d} | train_loss={train_loss:.4f} | val_loss={val_loss:.4f} | val_dice={val_dice:.4f}")
-
-        if val_dice > best_dice:
-            best_dice = val_dice
-            torch.save(model.state_dict(), best_path)
-            print(f"Saved best model to {best_path}")
+    pd.DataFrame(history).to_csv(MODEL_DIR / "training_history.csv", index=False)
+    print("Training finished.")
+    print(f"Best val dice: {best_val_dice:.4f}")
 
 if __name__ == "__main__":
     main()
-    
