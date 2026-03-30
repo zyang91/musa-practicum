@@ -17,3 +17,56 @@ Several limitations should be noted. First, the road-surface segmentation was in
 Second, the crossing-distance workflow does not directly identify marked crosswalks or curb ramps. Instead, it estimates crossing distance from predicted road-surface extent and OSM-based intersection geometry. This means the outputs are best understood as intersection-leg-level approximations of curb-to-curb width, not exact pedestrian crossing distances at specific marked crossings.
 
 Third, the workflow depends on the quality of both the segmentation output and the OSM street network. Errors in either source can affect final measurements. Some intersection legs were also not successfully measured, so coverage remains incomplete. For these reasons, the results are most appropriate for pilot analysis, exploratory screening, and proof-of-concept work rather than engineering-grade design measurement.
+
+
+## How crossing distance is measured
+
+This workflow estimates crossing distance at the **intersection-leg level** using three inputs:
+
+1. predicted road-surface polygons from the segmentation model  
+2. OSM-derived intersection points  
+3. OSM road edges connected to each intersection  
+
+For each intersection, the script identifies nearby road legs from the OSM network. It then estimates the direction of each leg and creates a short measurement line that is **approximately perpendicular to the roadway**. This line is placed slightly away from the intersection center so that it crosses the road surface rather than the middle of the intersection node.
+
+The script intersects that measurement line with the predicted road-surface polygon. The length of the intersected segment is treated as the **crossing distance**, which is interpreted as an approximate **curb-to-curb width** at that leg.
+
+This means the output is **not** a manually measured marked crosswalk length. It is an automated geometric estimate based on segmented road surface and OSM intersection structure.
+
+## How to use the outputs
+
+The workflow produces three main outputs:
+
+### `crossing_distance_points.gpkg`
+Use this for **mapping** crossing distance locations.  
+Each point represents one valid crossing-distance estimate, and the attribute `crossing_ft` stores the estimated distance in feet.
+
+Best use:
+- thematic maps
+- graduated color maps
+- spatial comparison of shorter vs. longer crossings
+
+### `crossing_distance_lines.gpkg`
+Use this for **method visualization**.  
+Each line is the actual segment used to measure crossing distance.
+
+Best use:
+- showing how the estimate was generated
+- overlaying on imagery or road polygons
+- checking whether the measurement looks reasonable
+
+### `crossing_distance_table.csv`
+Use this for **summary statistics and charts**.  
+This table summarizes crossing-distance estimates by intersection.
+
+Best use:
+- descriptive statistics
+- histograms or boxplots
+- comparing distributions across sites
+
+## Important interpretation notes
+
+- Distances are estimated **by leg**, not by assigning one single value to the whole intersection.
+- A four-way intersection does **not automatically mean four identical crossing distances**.
+- Because the road-surface segmentation is conservative, some distances may be slightly **underestimated**.
+- These outputs are appropriate for **pilot analysis, exploratory measurement, and visualization**, not engineering-grade field measurement.
