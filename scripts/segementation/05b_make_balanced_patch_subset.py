@@ -11,8 +11,8 @@ random.seed(42)
 np.random.seed(42)
 
 # ===== paths =====
-IMG_DIR = Path("data/patches/images")
-MASK_DIR = Path("data/patches/masks")
+IMG_DIR = Path("data/seg/images")
+MASK_DIR = Path("data/seg/masks")
 
 OUT_IMG_DIR = Path("data/patches_balanced/images")
 OUT_MASK_DIR = Path("data/patches_balanced/masks")
