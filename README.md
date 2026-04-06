@@ -35,8 +35,7 @@ We do **not** seek to replace engineering surveys. Instead, we provide a scalabl
 ### Outputs
 
 1. **Crossing Width** — Curb-to-curb road width at each intersection approach, measured via perpendicular transect sampling on road-surface segmentation masks.
-2. **Crosswalk Painting Quality** — A 0–100 composite quality score per crosswalk reflecting contrast, coverage, continuity, and occlusion.
-3. **Stop Sign & Streetlight Locations** — Point layers for traffic control features detected at intersections.
+2. **Stop Sign & Streetlight Locations** — Point layers for traffic control features detected at intersections.
 
 ---
 
@@ -49,14 +48,9 @@ We do **not** seek to replace engineering surveys. Instead, we provide a scalabl
 ### Processing Pipeline
 1. **Intersection & Approach Indexing** — Derive intersection nodes and approach segments from the street network.
 2. **Region-of-Interest (ROI) Construction** — Buffer each intersection to restrict all inference to relevant pavement areas, reducing false positives from parking lots, rooftops, and large plazas.
-3. **Road Surface Segmentation** — Apply a segmentation model within each ROI to identify drivable pavement area.
+3. **Crossing Surface Segmentation** — Apply a segmentation model within each ROI to identify crossing lines.
 4. **Crossing Width Measurement** — Cast perpendicular transects across each approach and compute the median road-surface span as the crossing width.
-5. **Crosswalk Detection & Quality Scoring** — Detect and segment crosswalk markings; score each crosswalk on contrast, coverage, continuity, and occlusion.
-6. **Traffic Feature Detection** — Apply a YOLO-based object detector to identify stop signs and streetlights at each intersection.
-
-### Validation
-- Crossing widths are validated against manual field measurements for a stratified sample of intersections.
-- Crosswalk quality scores are validated against human visual ratings using rank correlation.
+5. **Traffic Feature Detection** — Apply a YOLO-based object detector to identify stop signs and streetlights at each intersection.
 
 ---
 
