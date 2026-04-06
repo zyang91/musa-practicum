@@ -1,0 +1,49 @@
+## Findings
+
+The crosswalk segmentation workflow produced strong results in detecting labeled crosswalks from aerial imagery in the University City study area. Using manually created crosswalk labels as ground truth, the dataset was prepared by rasterizing labeled crosswalk features onto the reference mosaic and generating image-mask patches for model training and evaluation.
+
+In total, the dataset included 202 labeled crosswalk features and 934 image patches. These patches were divided into training, validation, and test sets after balancing positive and negative samples. This structure gave the model enough variation to learn the visual characteristics of crosswalk markings while also allowing evaluation on held-out data.
+
+The U-Net model performed well in predicting crosswalk pixels. During training, the validation Dice score improved steadily and reached a best value of 0.9185. Threshold tuning on the validation set identified 0.40 as the best cutoff for converting predicted probabilities into a binary crosswalk mask. At this threshold, the model achieved a precision of 0.924, recall of 0.955, F1 score of 0.939, IoU of 0.886, and Dice of 0.939. These results show high agreement between the predicted crosswalk mask and the labeled crosswalk mask.
+
+The performance pattern is also meaningful. Recall was slightly higher than precision, which means the model captured most true crosswalk pixels while introducing a limited amount of extra predicted area. For this project, that is a reasonable outcome, since missing parts of a true crosswalk would be more problematic than slight overprediction around the edges of the markings.
+
+The trained model was then applied to the full University City mosaic using a sliding-window prediction process. This allowed the workflow to move beyond patch-level testing and produce a full-scene crosswalk prediction surface. After post-processing, the predicted raster was cleaned to remove small isolated artifacts while preserving nearly all detected crosswalk area. The cleaned raster was then converted into vector polygons, resulting in 756 predicted crosswalk polygons across the full scene.
+
+These findings show that the workflow can identify crosswalks with high pixel-level accuracy and can scale to full-scene prediction for a large study area. The final output provides a practical base for mapping crosswalk locations and supporting future planning analysis. At the same time, the number of predicted polygons is greater than the number of labeled crosswalk features used in training, which indicates that some predicted results likely include fragmented markings or false positives. Because of this, additional review or post-processing would still be useful before treating the output as a final crosswalk inventory.
+
+For the purposes of this practicum, the results demonstrate that aerial-image-based segmentation is a feasible approach for extracting crosswalk features and generating planning-relevant geospatial data at scale.
+
+## Discussion
+
+The results show that deep-learning-based image segmentation can serve as a practical method for extracting crosswalk features from aerial imagery. In the context of this practicum, the main contribution is not only that the model achieved strong evaluation metrics, but also that it produced a full-scene spatial output that can be used in later planning workflows. This matters because crosswalk data are often incomplete, inconsistently maintained, or difficult to assemble across a large area through manual digitization alone.
+
+A key strength of the workflow is that it connects model training with geographically usable outputs. The final result is not just a set of patch-level predictions, but a raster and vector representation of crosswalk features across the study area. This makes the workflow relevant for planning applications such as crosswalk inventory creation, spatial auditing of pedestrian infrastructure, and future linkage with other street-level variables, including intersection design, crossing distance, street width, and safety conditions.
+
+The model’s high recall is also important in practical terms. For planning and screening purposes, it is often preferable to identify most true crosswalks first and then refine the results, rather than miss existing crosswalks at the detection stage. In that sense, the workflow is well suited for building a preliminary crosswalk database that can later be reviewed, cleaned, or combined with other data sources.
+
+At the same time, the difference between the number of labeled crosswalk features and the number of predicted polygons in the full-scene output shows that detection accuracy at the pixel level does not automatically translate into a clean object-level inventory. Some crosswalks may be split into multiple polygons, and some predicted polygons may reflect noise or visually similar pavement markings. This is an important reminder that segmentation performance should be interpreted not only through model metrics such as Dice or IoU, but also through the quality and usability of final mapped features.
+
+Taken together, the results suggest that this workflow is a strong starting point for planning-oriented geospatial analysis. It reduces the burden of fully manual mapping and creates a replicable pipeline for identifying crosswalks over a large urban area. For a practicum project, this is a meaningful proof of concept and provides a foundation for more advanced future work.
+
+## Limitations
+
+This project has several limitations. First, the model was trained using a relatively small labeled dataset, with 202 labeled crosswalk features. While the model performed well on validation metrics, a limited training sample may not fully capture the visual variation of crosswalks across different roadway conditions, pavement materials, marking styles, lighting conditions, or levels of wear. As a result, model performance may be weaker in locations that differ from the labeled training examples.
+
+Second, the evaluation metrics are based on pixel-level agreement between predicted masks and labeled masks. These metrics are useful for measuring segmentation quality, but they do not fully capture object-level performance. In practice, a predicted crosswalk may be slightly fragmented, merged, or overextended while still receiving a strong pixel-level score. This matters because planning applications often require clean feature objects rather than only high pixel overlap.
+
+Third, the full-scene prediction results indicate that the model may generate fragmented polygons or false positives. The final output contained more predicted polygons than the number of labeled crosswalk features used in training, which shows that additional cleaning is needed before the output can function as a reliable inventory. Morphological cleaning helped remove small artifacts, but it did not fully solve problems related to splitting, merging, or confusion with other painted street markings.
+
+Fourth, the model identifies visible crosswalk markings from aerial imagery, but it does not capture broader questions about crosswalk condition, legal designation, accessibility quality, or actual pedestrian safety. A detected crosswalk in imagery is not the same as a complete planning assessment. Important dimensions such as striping quality, curb ramp condition, signalization, and driver behavior remain outside the scope of this workflow.
+
+Finally, this project is limited to one study area and one image source. The model has not yet been tested across multiple neighborhoods, cities, or image vintages. Because of this, it is not yet clear how well the workflow would generalize to other contexts without additional training data or recalibration.
+
+Despite these limitations, the project still demonstrates the value of using segmentation methods to support pedestrian infrastructure mapping. The current workflow should be understood as a scalable and useful first step rather than a final automated inventory product.
+
+## Conclusion
+
+This practicum developed and tested a deep-learning workflow for detecting crosswalks from aerial imagery in University City. Using manually labeled crosswalks as ground truth, the U-Net model achieved strong pixel-level performance and produced a full-scene prediction surface that could be converted into vector polygons for mapping and analysis.
+
+The findings show that aerial-image-based segmentation can provide a practical and replicable way to identify crosswalk features at scale. For planning purposes, this offers a useful starting point for building crosswalk inventories and supporting future analysis of pedestrian infrastructure and street design conditions.
+
+At the same time, the project also shows that strong segmentation metrics do not eliminate the need for review and refinement. Fragmentation, false positives, and limits in generalizability remain important challenges. Future work can improve the workflow by expanding labeled data, strengthening post-processing, and connecting crosswalk detection outputs to broader questions of accessibility, safety, and transportation planning.
