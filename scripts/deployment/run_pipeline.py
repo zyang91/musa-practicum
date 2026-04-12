@@ -56,8 +56,8 @@ def main():
     parser = argparse.ArgumentParser(description="Run deployment pipeline for all neighborhoods")
     parser.add_argument("--neighborhoods", nargs="*", default=None,
                         help="Specific neighborhood names to process (default: all)")
-    parser.add_argument("--skip-download", action="store_true",
-                        help="Skip tile download (use existing tiles)")
+    parser.add_argument("--skip-download", action="store_true", default=True,
+                        help="Skip tile download — manual download is default (use existing tiles)")
     parser.add_argument("--skip-mosaic", action="store_true",
                         help="Skip mosaic step (use existing mosaics)")
     parser.add_argument("--skip-predict", action="store_true",
