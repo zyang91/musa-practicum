@@ -1,11 +1,15 @@
 """
 03_predict.py
-Run UNet sliding-window prediction on a neighborhood mosaic.
+Run UNet sliding-window prediction on a mosaic.
 
-Reads   : data/processed/<neighborhood>_mosaic.tif
-Model   : models/best_unet.pt  (ResNet34 encoder, trained on University City)
-Outputs : result/<neighborhood>/outputs/<neighborhood>_mosaic_prob.tif
-          result/<neighborhood>/outputs/<neighborhood>_mosaic_bin.tif
+Usage:
+    python scripts/deployment/03_predict.py --input data/processed/middle.tif
+    python scripts/deployment/03_predict.py --input data/processed/south.tif
+    python scripts/deployment/03_predict.py --input data/processed/upper-middle.tif
+
+Outputs are saved next to the input file:
+    <input_stem>_prob.tif   — probability raster
+    <input_stem>_bin.tif    — binary prediction raster
 """
 
 from pathlib import Path
@@ -18,8 +22,6 @@ import segmentation_models_pytorch as smp
 
 # ── Config ──────────────────────────────────────────────────────────────────
 MODEL_PATH = Path("models/best_unet.pt")
-PROCESSED_DIR = Path("data/processed")
-RESULT_ROOT = Path("result")
 
 PATCH_SIZE = 256
 STRIDE = 128
@@ -58,7 +60,6 @@ def normalize_img(img: np.ndarray) -> np.ndarray:
 
 
 def pad_patch(arr: np.ndarray, patch_size: int):
-    """Pad (C, H, W) array to (C, patch_size, patch_size). Returns padded, orig_h, orig_w."""
     c, h, w = arr.shape
     out = np.zeros((c, patch_size, patch_size), dtype=arr.dtype)
     out[:, :h, :w] = arr
@@ -76,28 +77,30 @@ def tile_positions(full_size: int, patch_size: int, stride: int):
 
 # ── Main ────────────────────────────────────────────────────────────────────
 def main():
-    parser = argparse.ArgumentParser(description="Run UNet prediction on neighborhood mosaic")
-    parser.add_argument("--name", required=True, help="Neighborhood name")
+    parser = argparse.ArgumentParser(description="Run UNet prediction on a mosaic")
+    parser.add_argument("--input", required=True, help="Path to input mosaic .tif")
+    parser.add_argument("--output-dir", default=None,
+                        help="Output directory (default: same folder as input)")
     parser.add_argument("--threshold", type=float, default=THRESHOLD,
                         help=f"Binary threshold (default: {THRESHOLD})")
     parser.add_argument("--batch-size", type=int, default=16,
                         help="Inference batch size (default: 16)")
     args = parser.parse_args()
 
-    name = args.name
+    input_raster = Path(args.input)
+    stem = input_raster.stem
+    out_dir = Path(args.output_dir) if args.output_dir else input_raster.parent
+    out_dir.mkdir(parents=True, exist_ok=True)
+
     threshold = args.threshold
     batch_size = args.batch_size
 
-    input_raster = PROCESSED_DIR / f"{name}_mosaic.tif"
-    out_dir = RESULT_ROOT / name / "outputs"
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    prob_out = out_dir / f"{name}_mosaic_prob.tif"
-    bin_out = out_dir / f"{name}_mosaic_bin.tif"
+    prob_out = out_dir / f"{stem}_prob.tif"
+    bin_out = out_dir / f"{stem}_bin.tif"
 
     print(f"Device       : {DEVICE}")
-    print(f"Neighborhood : {name}")
     print(f"Input        : {input_raster}")
+    print(f"Output dir   : {out_dir}")
     print(f"Threshold    : {threshold}")
     print(f"Batch size   : {batch_size}")
 
@@ -111,19 +114,21 @@ def main():
         height, width = src.height, src.width
         count = src.count
 
+        print(f"Raster size  : {width} x {height}")
+        print(f"Bands        : {count}  dtype: {src.dtypes}")
+        print(f"CRS          : {src.crs}")
+
         if count < 3:
             raise ValueError(f"Expected ≥3 bands, got {count}")
 
         ys = tile_positions(height, PATCH_SIZE, STRIDE)
         xs = tile_positions(width, PATCH_SIZE, STRIDE)
         n_total = len(xs) * len(ys)
-        print(f"Raster size  : {width} x {height}")
         print(f"Total windows: {n_total}")
 
         prob_sum = np.zeros((height, width), dtype=np.float32)
         prob_count = np.zeros((height, width), dtype=np.float32)
 
-        # Collect all window specs for batched inference
         windows = []
         for y in ys:
             for x in xs:

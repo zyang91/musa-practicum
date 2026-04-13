@@ -2,10 +2,10 @@
 04_postprocess.py
 Clean binary prediction raster and vectorize to polygons.
 
-Reads   : result/<neighborhood>/outputs/<neighborhood>_mosaic_bin.tif
-Outputs : result/<neighborhood>/outputs/<neighborhood>_crosswalks.gpkg
-          result/<neighborhood>/outputs/<neighborhood>_crosswalks.shp
-          result/<neighborhood>/outputs/<neighborhood>_mosaic_bin_cleaned.tif
+Usage:
+    python scripts/deployment/04_postprocess.py --input data/processed/middle_bin.tif
+    python scripts/deployment/04_postprocess.py --input data/processed/south_bin.tif
+    python scripts/deployment/04_postprocess.py --input data/processed/upper-middle_bin.tif
 """
 
 from pathlib import Path
@@ -18,8 +18,6 @@ import geopandas as gpd
 from shapely.geometry import shape
 
 # ── Config ──────────────────────────────────────────────────────────────────
-RESULT_ROOT = Path("result")
-
 MIN_PIXELS = 200        # minimum connected-component size
 APPLY_OPENING = False
 APPLY_CLOSING = True
@@ -57,20 +55,25 @@ def raster_to_polygons(mask: np.ndarray, transform):
 
 def main():
     parser = argparse.ArgumentParser(description="Post-process predictions and vectorize")
-    parser.add_argument("--name", required=True, help="Neighborhood name")
+    parser.add_argument("--input", required=True, help="Path to binary prediction raster (_bin.tif)")
+    parser.add_argument("--output-dir", default=None,
+                        help="Output directory (default: same folder as input)")
     parser.add_argument("--min-pixels", type=int, default=MIN_PIXELS,
                         help=f"Min component size in pixels (default: {MIN_PIXELS})")
     args = parser.parse_args()
 
-    name = args.name
-    out_dir = RESULT_ROOT / name / "outputs"
-    input_bin = out_dir / f"{name}_mosaic_bin.tif"
-    cleaned_raster = out_dir / f"{name}_mosaic_bin_cleaned.tif"
-    polygons_gpkg = out_dir / f"{name}_crosswalks.gpkg"
-    polygons_shp = out_dir / f"{name}_crosswalks.shp"
+    input_bin = Path(args.input)
+    # Derive stem: e.g. "middle_bin" → "middle"
+    stem = input_bin.stem.replace("_bin", "")
+    out_dir = Path(args.output_dir) if args.output_dir else input_bin.parent
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"Neighborhood : {name}")
+    cleaned_raster = out_dir / f"{stem}_bin_cleaned.tif"
+    polygons_gpkg = out_dir / f"{stem}_crosswalks.gpkg"
+    polygons_shp = out_dir / f"{stem}_crosswalks.shp"
+
     print(f"Input        : {input_bin}")
+    print(f"Output dir   : {out_dir}")
 
     if not input_bin.exists():
         raise FileNotFoundError(f"Binary raster not found: {input_bin}")
