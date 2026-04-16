@@ -45,7 +45,6 @@ We do **not** claim that this workflow replaces engineering surveys or produces 
 2. **Crosswalk Detection** — Predicted crosswalk polygon locations derived from U-Net segmentation of aerial imagery, providing spatial coverage and marking visibility.
 3. **Stop Sign & Streetlight Locations** — Point layers for traffic control features detected at intersections using a fine-tuned YOLO object detection model.
 
----
 
 ## Methodology
 
